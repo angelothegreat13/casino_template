@@ -194,8 +194,7 @@
     background: linear-gradient(to bottom, #46126A, #7B438A) !important;
     border: none !important;
     letter-spacing: 1px;
-}
-  
+}  
 .tf-button:hover, 
 .filter-menu li:hover, 
 .filter-menu li a:hover {
@@ -203,6 +202,10 @@
     border: none !important;
     color: #FFD664 !important;
 }
+.tf-button:focus {
+    color: #FFD664 !important;
+}
+
 
 .filter-menu li.active a {
     color: #FFD664 !important;
@@ -268,14 +271,42 @@
     padding: 11px 35px 11px 37px !important;
 }
 
+.tf-sm-btn {
+    padding: 5px 11px !important;
+}
 .tf-md-btn {
-    padding: 11px 35px 11px 37px !important;
+    padding: 11px 30px !important;
+}
+.tf-lg-btn {
+    padding: 20px 35px !important;
 }
 .tf-money-btn {
     padding: 8px 15px !important;
     font-size: 12px !important;
     border-radius: 5px !important;
+    background: transparent !important;
+    border: 1px solid #FFD664 !important;
 }
+.tf-btn-primary {
+    background: #3749E9 !important;
+    color: #fff !important;
+}
+.tf-btn-primary:hover {
+    background: #4250c7 !important;
+    color: #fff !important;
+}
+.tf-btn-danger {
+    background: #dc3545 !important;
+    color: #fff !important;
+}
+.tf-btn-danger:hover {
+    background: #c51a2b !important;
+    color: #fff !important;
+}
+.tf-btn-danger:focus {
+    color: #fff !important;
+}
+
 .money-btn-container {
     margin-top: 10px;
     display: flex;
@@ -295,7 +326,7 @@
     border-top: none !important;
 }
 .custom-table td {
-    font-size: 12px !important;
+    font-size: 13px !important;
     padding: 10px;
 }
 
