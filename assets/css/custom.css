@@ -1,5 +1,5 @@
 :root {
-    --card-height: 496px;
+    --card-height: 300px;
     --card-width: calc(var(--card-height) / 1.5);
 }
 
@@ -9,6 +9,18 @@
 
 .mb-15 {
     margin-bottom: 15px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.height-auto {
+    height: auto !important;
 }
 
 .tf-body {
@@ -197,4 +209,52 @@
 .modal-body {
     background: url(../images/background/Mid-BG.png);
 }
+
+.tf-tab .menu-tab li a {
+    font-size: 17px !important;
+}
+.tf-tab .menu-tab li.active a {
+    color: #FFD664 !important;
+    font-weight: 900;
+}
+.tf-tab .menu-tab li.active::after {
+    background: linear-gradient(to bottom, #46126A, #7B438A) !important;
+}
+
+.custom-label {
+    font-size: 15px !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 5px !important;
+}
+.custom-input {
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 10px !important;
+    background: transparent !important;
+    padding: 9px 20px 9px 20px !important;
+    color: #B9B8BB !important;
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+}
+
+.card-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.custom-card-flex {
+    width: 16%;
+}
+
+.tf-tab .custom-menu-tab {
+    justify-content: center !important;
+    border-bottom: none !important;
+}
+.tf-tab .custom-menu-tab li.active::after {
+    background: none !important;
+}
+.tf-tab .custom-menu-tab li {
+    padding: 11px 35px 11px 37px !important;
+}
+
+
 
