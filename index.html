@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/RG-logo.png">
 </head>
 
-<body class="body header-fixed home-1">
+<body class="body is_dark">
 
     <!-- preloade -->
     <div class="preload preload-container">
@@ -71,6 +71,7 @@
                 </div>
                 
             </header>
+
             <div class="tf-body">
                 <div class="tf-container">
                     <div class="tf-tab">
@@ -347,7 +348,7 @@
                 <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <div class="tf-tab">
+                            <div class="tf-tab mb-0">
                                 <ul class="menu-tab ">
                                     <li class="tab-title active">
                                         <a href="#">입금신청</a> <!-- deposit -->
@@ -368,30 +369,212 @@
                                 <div class="content-tab">
                                     <div class="content-inner active">
                                         <!-- deposit -->
-                                        <div class="form-group">
-                                            <label class="custom-label" for="name">ID</label>
-                                            <input type="text" name="name" id="name" placeholder="Name" class="custom-input">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="custom-label" for="name">Depositor Name</label>
-                                            <input type="text" name="name" placeholder="Name" class="custom-input">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="custom-label" for="name">Members are done</label>
-                                            <input type="text" name="name" placeholder="Name" class="custom-input">
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <div class="form-group">
+                                                    <label class="custom-label">아이디</label>
+                                                    <input type="text" class="custom-input" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="custom-label">예금주명</label>
+                                                    <input type="text" class="custom-input" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="custom-label">회원은행</label>
+                                                    <input type="text" class="custom-input" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="custom-label mr-10" >충전계좌</label>
+                                                    <a href="#" class="tf-button tf-money-btn">문의</a>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="custom-label">신청금액 <span class="ml-5">(1만원 단위로 입금신청해주시기 바랍니다.)</span></label>
+                                                    <input type="text" class="custom-input" value="0">
+                                                    <div class="money-btn-container">
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">1만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">5만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">10만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">50만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">100만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">500만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">1000만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">정정</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-right mt-5">
+                                                    <button type="button" class="tf-button tf-md-btn">입금신청하기</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-9">
+                                                <div class="border-gold"></div>
+                                                <table class="table custom-table">
+                                                    <thead class="thead-dark">
+                                                      <tr>
+                                                        <th scope="col">번호</th>
+                                                        <th scope="col">방식</th>
+                                                        <th scope="col">신청일시</th>
+                                                        <th scope="col">처리일시</th>
+                                                        <th scope="col">충/환전금액</th>
+                                                        <th scope="col">처리현황</th>
+                                                        <th scope="col">기능</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>시험</td>
+                                                            <td>관리자</td>
+                                                            <td>09월06일 21시53분</td>
+                                                            <td>09월06일 21시53분</td>
+                                                            <td>100,000,000원</td>
+                                                            <td>완료</td>
+                                                            <td>삭제</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>시험</td>
+                                                            <td>관리자</td>
+                                                            <td>09월06일 21시53분</td>
+                                                            <td>09월06일 21시53분</td>
+                                                            <td>100,000,000원</td>
+                                                            <td>완료</td>
+                                                            <td>삭제</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="content-inner">         
-                                        withdraw                                      
+                                        <!-- withdraw -->
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <div class="form-group">
+                                                    <label class="custom-label">아이디</label>
+                                                    <input type="text" class="custom-input" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="custom-label">예금주명</label>
+                                                    <input type="text" class="custom-input" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="custom-label">회원은행</label>
+                                                    <input type="text" class="custom-input" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="custom-label">신청금액</label>
+                                                    <input type="text" class="custom-input" value="0">
+                                                    <div class="money-btn-container">
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">1만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">5만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">10만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">50만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">100만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">500만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">1000만원</a>
+                                                        <a href="#" class="tf-button tf-money-btn mr-5 mb-5">정정</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-right mt-5">
+                                                    <button type="button" class="tf-button tf-md-btn">출금신청하기</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-9">
+                                                <div class="border-gold"></div>
+                                                <table class="table custom-table">
+                                                    <thead class="thead-dark">
+                                                      <tr>
+                                                        <th scope="col">번호</th>
+                                                        <th scope="col">방식</th>
+                                                        <th scope="col">신청일시</th>
+                                                        <th scope="col">처리일시</th>
+                                                        <th scope="col">충/환전금액</th>
+                                                        <th scope="col">처리현황</th>
+                                                        <th scope="col">기능</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="7" class="text-center">출금내역이 없습니다.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>                                      
                                     </div>
                                     <div class="content-inner" >
-                                        note
+                                        <!-- note -->
+                                        <div class="col-xl-12">
+                                            <div class="border-gold"></div>
+                                            <table class="table custom-table">
+                                                <thead class="thead-dark">
+                                                  <tr>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">제목</th>
+                                                    <th scope="col">작성일</th>
+                                                    <th scope="col">상태</th>
+                                                    <th scope="col">기능</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="5" class="text-center">쪽지가 없습니다.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="content-inner">
+                                        <!-- customer center -->
+                                        <div class="col-xl-12">
+                                            <div class="border-gold"></div>
+                                            <table class="table custom-table">
+                                                <thead class="thead-dark">
+                                                  <tr>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">제목</th>
+                                                    <th scope="col">문의날자</th>
+                                                    <th scope="col">상태</th>
+                                                    <th scope="col">기능</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>계좌요청</td>
+                                                        <td>09월25일 17시25분</td>
+                                                        <td>문의중</td>
+                                                        <td>삭제</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>계좌요청</td>
+                                                        <td>09월25일 17시25분</td>
+                                                        <td>문의중</td>
+                                                        <td>삭제</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                     <div class="content-inner" >
-                                        customer center
-                                    </div>
-                                    <div class="content-inner" >
-                                        notice
+                                        <!-- notice -->
+                                        <div class="col-xl-12">
+                                            <div class="border-gold"></div>
+                                            <table class="table custom-table">
+                                                <thead class="thead-dark">
+                                                  <tr>
+                                                    <th scope="col">제목</th>
+                                                    <th scope="col">작성일</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" class="text-center">등록된 공지가 없습니다.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>                           
                             </div>

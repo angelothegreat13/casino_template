@@ -7,12 +7,23 @@
     margin-top: 45px !important;
 }
 
+.mb-5 {
+    margin-bottom: 5px !important;
+}
 .mb-15 {
     margin-bottom: 15px !important;
 }
-
 .mb-40 {
     margin-bottom: 40px !important;
+}
+.ml-5 {
+    margin-left: 5px !important;
+}
+.mr-5 {
+    margin-right: 5px !important;
+}
+.mr-10 {
+    margin-right: 10px !important;
 }
 
 .position-relative {
@@ -28,6 +39,7 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center; 
+    padding-bottom: 10px;
 } 
 
 .header-card-img-size {
@@ -255,6 +267,42 @@
 .tf-tab .custom-menu-tab li {
     padding: 11px 35px 11px 37px !important;
 }
+
+.tf-md-btn {
+    padding: 11px 35px 11px 37px !important;
+}
+.tf-money-btn {
+    padding: 8px 15px !important;
+    font-size: 12px !important;
+    border-radius: 5px !important;
+}
+.money-btn-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-table thead th {
+    padding: 10px 20px;
+    color: #FFD664;
+    background: linear-gradient(to bottom, #270c3a, #46126A);
+    font-weight: 700;
+    border-bottom: none !important;
+    font-size: 16px;
+}
+
+.custom-table th, .custom-table td {
+    border-top: none !important;
+}
+.custom-table td {
+    font-size: 12px !important;
+    padding: 10px;
+}
+
+
+
+
+
 
 
 
