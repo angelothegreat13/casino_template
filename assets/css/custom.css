@@ -46,10 +46,11 @@
 
 .tf-body {
     background: url(../images/background/Mid-BG.png);
-    background-size: cover; 
+    background-size: cover !important; 
     background-repeat: no-repeat; 
     background-position: center center; 
     padding-bottom: 10px;
+    /* min-height: 1206px; */
 } 
 
 .header-card-img-size {
@@ -354,11 +355,4 @@
 #main-nav > ul > li > a:hover {
     color: #FFD664 !important;
 }
-
-
-
-
-
-
-
 
