@@ -370,13 +370,30 @@
                                     <div class="content-inner active">
                                         <!-- deposit -->
                                         <div class="row">
-                                            <div class="col-xl-12">
-                                                <div class="board-list" style="height: auto;">
-                                                    <span style="color: #FFD664; font-size: 20px;">입금신청</span> <span style="font-size: 13px;">* 보이스피싱 및 3자사기로 협박하더라도 협상 및 타협 절대없음 *</span>
+                                            <div class="col-xl-12 mb-15">
+                                                <div class="board-list h-auto mb-10">
+                                                    <div class="d-flex align-items-center">
+                                                        <h6 class="color-gold">입금신청</h6>	
+                                                        <span class="ml-5">* 보이스피싱 및 3자사기로 협박하더라도 협상 및 타협 절대없음 *</span>
+                                                    </div>
+                                                </div>
+                                                <div class="board-list h-auto">
+                                                    <h6 class="color-gold">주의사항</h6>
+                                                    <ul>
+                                                        <li>- 계좌거래시 입금/출금 이름이 동일해야 입출금이 가능하오니 정확히 입력해 주세요.</li>
+                                                        <li>- 수표나 타인계좌로 이름변경하여 입금시 머니몰수 및 아이디정지 처리되오니 타인명의로 입금해야될시 문의를 먼저하시기 바랍니다</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="float-right">
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-size">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                                                        </svg>
+                                                        <span class="color-gold ml-5 font-weight-bold">지갑머니 : 95,000,000원</span> 
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div><br>
-                                        <div class="row">
+
                                             <div class="col-xl-3">
                                                 <div class="form-group">
                                                     <label class="custom-label">아이디</label>
@@ -414,46 +431,71 @@
                                             </div>
 
                                             <div class="col-xl-9">
-                                                <div class="border-gold"></div>
-                                                <table class="table custom-table">
-                                                    <thead class="thead-dark">
-                                                      <tr>
-                                                        <th scope="col" class="text-center">번호</th>
-                                                        <th scope="col" class="text-center">방식</th>
-                                                        <th scope="col" class="text-center">신청일시</th>
-                                                        <th scope="col" class="text-center">처리일시</th>
-                                                        <th scope="col" class="text-center">충/환전금액</th>
-                                                        <th scope="col" class="text-center">처리현황</th>
-                                                        <th scope="col" class="text-center">기능</th>
-                                                      </tr>
-                                                    </thead>
-                                                    <tbody>
+                                                <div class="table-responsive">
+                                                    <div class="border-gold"></div>
+                                                    <table class="table custom-table">
+                                                        <thead class="thead-dark">
                                                         <tr>
-                                                            <td class="text-center">시험</td>
-                                                            <td class="text-center">관리자</td>
-                                                            <td class="text-center">09월06일 21시53분</td>
-                                                            <td class="text-center">09월06일 21시53분</td>
-                                                            <td class="text-center">100,000,000원</td>
-                                                            <td class="text-center"><span class="badge badge-success p-2">완료</span></td>
-                                                            <td class="text-center"><a href="#" class="tf-button tf-sm-btn tf-btn-danger style-2">삭제</a></td>
+                                                            <th scope="col">번호</th>
+                                                            <th scope="col">방식</th>
+                                                            <th scope="col">신청일시</th>
+                                                            <th scope="col">처리일시</th>
+                                                            <th scope="col">충/환전금액</th>
+                                                            <th scope="col">처리현황</th>
+                                                            <th scope="col">기능</th>
                                                         </tr>
-                                                        <tr>
-                                                            <td class="text-center">시험</td>
-                                                            <td class="text-center">관리자</td>
-                                                            <td class="text-center">09월06일 21시53분</td>
-                                                            <td class="text-center">09월06일 21시53분</td>
-                                                            <td class="text-center">100,000,000원</td>
-                                                            <td class="text-center"><span class="badge badge-primary p-2">완료</span></td>
-                                                            <td class="text-center"><a href="#" class="tf-button tf-sm-btn tf-btn-danger style-2">삭제</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>시험</td>
+                                                                <td>관리자</td>
+                                                                <td>09월06일 21시53분</td>
+                                                                <td>09월06일 21시53분</td>
+                                                                <td>100,000,000원</td>
+                                                                <td><span class="badge badge-success p-2">완료</span></td>
+                                                                <td><a href="#" class="tf-button tf-sm-btn tf-btn-danger style-2">삭제</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>시험</td>
+                                                                <td>관리자</td>
+                                                                <td>09월06일 21시53분</td>
+                                                                <td>09월06일 21시53분</td>
+                                                                <td>100,000,000원</td>
+                                                                <td><span class="badge badge-primary p-2">완료</span></td>
+                                                                <td><a href="#" class="tf-button tf-sm-btn tf-btn-danger style-2">삭제</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="content-inner">         
                                         <!-- withdraw -->
                                         <div class="row">
+                                            <div class="col-xl-12 mb-15">
+                                                <div class="board-list h-auto mb-10">
+                                                    <div class="d-flex align-items-center">
+                                                        <h6 class="color-gold">출금신청</h6>	
+                                                    </div>
+                                                </div>
+                                                <div class="board-list h-auto">
+                                                    <h6 class="color-gold">주의사항</h6>
+                                                    <ul>
+                                                        <li>- 출금은 최소 5만원이상 출금신청 해주시기 바랍니다.</li>
+                                                        <li>- 출금은 입금 신청하실때 신청하신 계좌로만 출금이 가능합니다.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="float-right">
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-size">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                                                        </svg>
+                                                        <span class="color-gold ml-5 font-weight-bold">지갑머니 : 95,000,000원</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="col-xl-3">
                                                 <div class="form-group">
                                                     <label class="custom-label">아이디</label>
@@ -511,17 +553,28 @@
                                     </div>
                                     <div class="content-inner" >
                                         <!-- note -->
+                                        <div class="col-xl-12 mb-15">
+                                            <div class="board-list h-auto mb-10">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <h6 class="color-gold">쪽지목록</h6>
+                                                    <div class="d-flex align-items-center">
+                                                        <a href="#" class="tf-button tf-sm-btn tf-btn-primary style-2">전체읽기</a>
+                                                        <a href="#" class="tf-button tf-sm-btn tf-btn-danger style-2 ml-5">전체삭제</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-xl-12">
                                             <div class="border-gold"></div>
                                             <table class="table custom-table">
                                                 <thead class="thead-dark">
-                                                  <tr>
+                                                <tr>
                                                     <th scope="col">번호</th>
                                                     <th scope="col">제목</th>
                                                     <th scope="col">작성일</th>
                                                     <th scope="col">상태</th>
                                                     <th scope="col">기능</th>
-                                                  </tr>
+                                                </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
@@ -550,15 +603,15 @@
                                                         <td>1</td>
                                                         <td>계좌요청</td>
                                                         <td>09월25일 17시25분</td>
-                                                        <td>문의중</td>
-                                                        <td>삭제</td>
+                                                        <td><span class="badge badge-primary p-2">문의중</span></td>
+                                                        <td><a href="#" class="tf-button tf-sm-btn tf-btn-danger style-2">삭제</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td>1</td>
                                                         <td>계좌요청</td>
                                                         <td>09월25일 17시25분</td>
-                                                        <td>문의중</td>
-                                                        <td>삭제</td>
+                                                        <td><span class="badge badge-warning p-2">대기중</span></td>
+                                                        <td><a href="#" class="tf-button tf-sm-btn tf-btn-danger style-2">삭제</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -599,14 +652,11 @@
                     <p class="copy-right text-center">Copyright © 2023 RedGold. All Rights Reserved.</p>
                 </div>
             </footer>
-
         <!-- Bottom -->
         </div>
         <!-- /#page -->
     </div>
     <!-- /#wrapper -->
-
-    <a id="scroll-top"></a>
 
     <!-- Javascript -->
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>

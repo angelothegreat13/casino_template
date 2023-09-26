@@ -3,12 +3,22 @@
     --card-width: calc(var(--card-height) / 1.5);
 }
 
+.color-gold {
+    color: #FFD664;
+}
+.h-auto {
+    height: auto !important;
+}
+
 .mt-45 {
     margin-top: 45px !important;
 }
 
 .mb-5 {
     margin-bottom: 5px !important;
+}
+.mb-10 {
+    margin-bottom: 10px !important;
 }
 .mb-15 {
     margin-bottom: 15px !important;
@@ -135,6 +145,11 @@
     transform: translate3d(0%, -30%, 100px);
 }
 
+.custom-footer {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px 0;
+    margin-bottom: -10px;
+}
 .footer {
     padding: 50px 0 !important;
 }
@@ -272,7 +287,7 @@
 }
 
 .tf-sm-btn {
-    padding: 5px 11px !important;
+    padding: 5px 15px !important;
 }
 .tf-md-btn {
     padding: 11px 30px !important;
@@ -328,6 +343,16 @@
 .custom-table td {
     font-size: 13px !important;
     padding: 10px;
+}
+
+.icon-size {
+    width: 24px;
+    height: 24px;
+}
+
+
+#main-nav > ul > li > a:hover {
+    color: #FFD664 !important;
 }
 
 
