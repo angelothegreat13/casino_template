@@ -1,6 +1,8 @@
 :root {
+    --card-sm-height: 220px;
     --card-height: 300px;
     --card-width: calc(var(--card-height) / 1.5);
+    --card-sm-width: calc(var(--card-sm-height) / 1.5);
 }
 
 .color-gold {
@@ -50,7 +52,6 @@
     background-repeat: no-repeat; 
     background-position: center center; 
     padding-bottom: 10px;
-    /* min-height: 1206px; */
 } 
 
 .header-card-img-size {
@@ -59,7 +60,7 @@
 
 .custom-card-container {
     overflow: visible !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 15px !important;
 }
 .custom-card {
     width: var(--card-width);
@@ -164,8 +165,6 @@
 .board-area {
     display: flex;
     justify-content: space-between;
-    /* border-left: 1px solid #282828; */
-    /* border-bottom: 1px solid #282828; */
     width: 100%;
     margin-bottom: 50px;
 }
@@ -273,7 +272,7 @@
     justify-content: center;
 }
 .custom-card-flex {
-    width: 16%;
+    margin-right: 10px;
 }
 
 .tf-tab .custom-menu-tab {
@@ -355,4 +354,34 @@
 #main-nav > ul > li > a:hover {
     color: #FFD664 !important;
 }
+
+/* custom responsive css */
+@media only screen and (max-width: 912px) {
+    /* board area */
+    .board-area {
+        flex-wrap: wrap;
+    }
+    .board-box {
+        width: 50% !important;
+        margin-bottom: 10px;
+    }
+}
+
+/* custom card */
+@media only screen and (max-width: 650px) {
+    .custom-card {
+        width: var(--card-sm-width);
+        height: var(--card-sm-height);
+    }
+}
+@media only screen and (max-width: 489px) {
+    .card-main-container div:nth-child(2n) {
+        margin-right: 0;
+    }
+    .board-box {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+}
+
 
