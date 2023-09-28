@@ -283,7 +283,12 @@
     background: none !important;
 }
 .tf-tab .custom-menu-tab li {
-    padding: 11px 35px 11px 37px !important;
+    /* padding: 11px 35px 11px 37px !important; */
+    padding: 5px 20px !important;
+}
+.tab-filter-icon {
+    width: 50px;
+    height: 50px;
 }
 
 .tf-sm-btn {
@@ -353,6 +358,19 @@
 
 #main-nav > ul > li > a:hover {
     color: #FFD664 !important;
+}
+
+.header-swiper-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1903px !important;
+    margin-bottom: -20px !important;
+}
+.header-swiper-slide img {
+    width: 100%;
+}
+.custom-swiper-pagination {
+    bottom: 30px !important;
 }
 
 /* custom responsive css */

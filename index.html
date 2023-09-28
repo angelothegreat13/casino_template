@@ -72,19 +72,50 @@
                 
             </header>
 
+            <!-- header -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper header-swiper-wrapper">
+                    <div class="swiper-slide header-swiper-slide" style="width: 100%;">
+                        <img src="./assets/images/casino elements/Banner ads/banner-1.jpg" alt="banner-1">
+                    </div>
+                    <div class="swiper-slide header-swiper-slide">
+                        <img src="./assets/images/casino elements/Banner ads/banner-2.jpg" alt="banner-2">
+                    </div>
+                    <div class="swiper-slide header-swiper-slide">
+                        <img src="./assets/images/casino elements/Banner ads/banner-3.jpg" alt="banner-3">
+                    </div>
+                    <div class="swiper-slide header-swiper-slide">
+                        <img src="./assets/images/casino elements/Banner ads/banner-4.jpg" alt="banner-4">
+                    </div>  
+                    <div class="swiper-slide header-swiper-slide">
+                        <img src="./assets/images/casino elements/Banner ads/banner-5.jpg" alt="banner-5">
+                    </div>
+                </div>
+                <div class="swiper-pagination custom-swiper-pagination"></div>
+            </div>
+
             <div class="tf-body">
                 <div class="tf-container">
                     <div class="tf-tab">
-                        <br><br>
+                        <br>
                         <ul class="menu-tab filter-menu custom-menu-tab mb-40">
                             <li class="tab-title active">
-                                <a href="#">라이브 카지노</a> <!-- live casino -->
+                                <a href="#" class="d-flex align-items-center"> <!-- live casino -->
+                                    <img src="./assets/images/casino elements/PNG Elements/Casino-Icon.png" class="tab-filter-icon"> 
+                                    <span class="tab-filter-txt">라이브 카지노</span>
+                                </a> 
                             </li>
                             <li class="tab-title">
-                                <a href="#">호텔 카지노</a> <!-- hotel casino -->
+                                <a href="#" class="d-flex align-items-center"> <!-- hotel casino -->
+                                    <img src="./assets/images/casino elements/PNG Elements/Hotel-Casino-Icon.png" class="tab-filter-icon"> 
+                                    <span class="tab-filter-txt">호텔 카지노</span>
+                                </a> 
                             </li>
                             <li class="tab-title">
-                                <a href="#">슬롯 머신</a> <!-- slot machine -->
+                                <a href="#" class="d-flex align-items-center"> <!-- slot machine -->
+                                    <img src="./assets/images/casino elements/PNG Elements/Slot-Machine-Icon.png" class="tab-filter-icon"> 
+                                    <span class="tab-filter-txt">슬롯 머신</span>
+                                </a> 
                             </li>
                         </ul>
                         <div class="content-tab">
@@ -183,6 +214,30 @@
                                                 </div>
                                                 <img src="assets/images/live-casino-logo/microgaming.png" class="title"/>
                                                 <img src="assets/images/live-casino/9.png" class="character"/>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="custom-card-container custom-card-flex">
+                                        <a href="#">
+                                            <div class="features custom-card">
+                                                <div class="wrapper">
+                                                    <img src="assets/images/live-casino/10.jpg" alt="images" class="cover-image">
+                                                </div>
+                                                <img src="assets/images/live-casino-logo/pragmatic-play.png" class="title"/>
+                                                <img src="assets/images/live-casino/10.png" class="character"/>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="custom-card-container custom-card-flex">
+                                        <a href="#">
+                                            <div class="features custom-card">
+                                                <div class="wrapper">
+                                                    <img src="assets/images/live-casino/4.jpg" alt="images" class="cover-image">
+                                                </div>
+                                                <img src="assets/images/live-casino-logo/skywind.png" class="title"/>
+                                                <img src="assets/images/live-casino/4.png" class="character"/>
                                             </div>
                                         </a>
                                     </div>
@@ -712,5 +767,12 @@
     <script src="assets/js/plugin.js"></script>
     <script src="assets/js/shortcodes.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 </html>
