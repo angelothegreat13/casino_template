@@ -11,6 +11,9 @@
 .h-auto {
     height: auto !important;
 }
+.h-2 {
+    height: 2px !important;
+}
 
 .mt-45 {
     margin-top: 45px !important;
@@ -336,6 +339,9 @@
     flex-wrap: wrap;
 }
 
+.responsive-table {
+    min-width: 980px !important;
+}
 .custom-table thead th {
     padding: 10px 20px;
     color: #FFD664;
@@ -394,6 +400,8 @@
     align-items: center;
 }
 
+
+
 /* custom responsive css */
 @media only screen and (max-width: 912px) {
     /* board area */
@@ -403,6 +411,25 @@
     .board-box {
         width: 50% !important;
         margin-bottom: 10px;
+    }
+    .board-list h6 {
+        font-size: 14px;
+    }
+    .board-list ul li {
+        font-size: 12px;
+    }
+
+    .modal-board-title {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .custom-table thead th {
+        font-size: 14px;
+    }
+    .custom-table td {
+        font-size: 12px !important;
+        padding: 10px;
     }
 }
 
